@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { logIn } from '../../redux/auth/auth-operations';
@@ -9,7 +11,6 @@ export default function Login() {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
 
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
@@ -51,6 +52,7 @@ export default function Login() {
           />
         </Label>
         <Button type="submit">Log In</Button>
+        <ToastContainer autoClose={1500} theme="dark" />
       </Form>
     </Layout>
   );

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { toast } from 'react-toastify';
 
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
@@ -21,7 +22,8 @@ export const register = createAsyncThunk('auth/register', async credentials => {
     token.set(data.token);
     return data;
   } catch (error) {
-    return (error.message);
+    // return (error.message);
+    toast.error(`${error.message}`, { position: toast.POSITION.TOP_CENTER });
   }
 });
 
@@ -33,7 +35,7 @@ export const logIn = createAsyncThunk('auth/login', async credentials => {
     token.set(data.token);
     return data;
   } catch (error) {
-    return error.message;
+    toast.error(`${error.message}`, { position: toast.POSITION.TOP_CENTER });
   }
 });
 
@@ -44,7 +46,7 @@ export const logOut = createAsyncThunk('auth/logout', async () => {
     token.unset();
 
   } catch (error) {
-    return error.message;
+    return (error.message);
   }
 });
 

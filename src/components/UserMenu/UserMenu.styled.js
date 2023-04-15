@@ -10,6 +10,7 @@ export const UserBox = styled.div`
 export const Text = styled.p`
   color: black;
   font-weight: 700;
+  font-size: 18px;
 `;
 
 export const Button = styled.button`

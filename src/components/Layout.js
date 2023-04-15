@@ -34,7 +34,6 @@ export const Layout = styled.div`
 `;
 
 export const StyledLink = styled(NavLink)`
-  margin-left: 20px;
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;

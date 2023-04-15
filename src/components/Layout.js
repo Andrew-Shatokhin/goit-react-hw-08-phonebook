@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Layout = styled.div`
   /* height: 700px; */
@@ -30,4 +31,17 @@ export const Layout = styled.div`
   box-shadow: 25px 31px 40px 26px rgba(28, 28, 25, 0.76);
   -webkit-box-shadow: 25px 31px 40px 26px rgba(28, 28, 25, 0.76);
   -moz-box-shadow: 25px 31px 40px 26px rgba(28, 28, 25, 0.76);
+`;
+
+export const StyledLink = styled(NavLink)`
+  margin-left: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  &.active {
+    color: white;
+    background-color: blue;
+  }
 `;

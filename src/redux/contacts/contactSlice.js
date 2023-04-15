@@ -16,8 +16,6 @@ const handleRejected = (state, action) => {
   state.error = action.payload;
 };
 
-
-
 const contactSlice = createSlice({
   name: 'contact',
   initialState: contactsInitialState,
@@ -49,8 +47,6 @@ const contactSlice = createSlice({
       state.items.splice(index, 1);
     },
     [deleteContact.rejected]: handleRejected,
-
-
   },
 });
 

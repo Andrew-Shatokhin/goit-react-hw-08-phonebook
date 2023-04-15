@@ -26,9 +26,6 @@ export const getVisibleContacts = createSelector(
 )
 
 
-
-
-
 // export const getVisibleContacts = state => {
 
 

@@ -1,6 +1,5 @@
 import { GlobalStyle } from '../GlobalStyle';
 import { Header } from './SharedLayout.styled';
-
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { UserMenu } from '../UserMenu/UserMenu';

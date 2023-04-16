@@ -7,7 +7,6 @@ export const Title = styled.h1`
   font-size: 48px;
   font-style: italic;
   color: #fff00b;
-  /* text-shadow: 1px 1px 3px #000000; */
   text-shadow: 2px 2px 20px #000977, 5px 5px 5px #000000;
 `;
 export const TitleSection = styled.h2`
@@ -17,6 +16,5 @@ export const TitleSection = styled.h2`
   font-size: 36px;
   font-style: italic;
   color: #fff00b;
-  /* text-shadow: 1px 1px 3px #000000; */
   text-shadow: 2px 2px 20px #000977, 5px 5px 5px #000000;
 `;

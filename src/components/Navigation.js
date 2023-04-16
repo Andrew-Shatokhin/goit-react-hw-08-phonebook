@@ -19,6 +19,4 @@ const isLoggedIn = useSelector(authSelectors.selectIsLoggedIn);
 }
 
 
-
-
 export default Navigation;
